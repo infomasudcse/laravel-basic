@@ -8,9 +8,9 @@
                 <small>Written On {{$post->created_at}}</small>
             </div>
         @endforeach
-
+        <div class="well mt-4">    
             {{$posts->links()}}
-
+        </div>    
     @else 
     <h3>No Posts Found </h3>
     @endif

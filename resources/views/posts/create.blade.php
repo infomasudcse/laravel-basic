@@ -2,7 +2,7 @@
 @section('content')
 
     <h1>Create Post</h1>   
-   {!! Form::open(['action'=>'PostsController@store']) !!}
+   {!! Form::open(['action'=>'PostsController@store','method'=>'POST']) !!}
       
         <div class="from-group">
             {{Form::label('title','Title')}}
@@ -12,7 +12,7 @@
 
         <div class="from-group">
             {{Form::label('body','Body')}}
-            {{Form::text('body','',['class'=>'form-control'])}}
+            {{Form::textarea('body','',['id'=>'article-ckeditor','class'=>'form-control'])}}
 
         </div>
         <div class="form-group">
